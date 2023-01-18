@@ -6,7 +6,7 @@
 
 #content{
     display: grid;
-    grid-template-rows: 1fr 5.2fr 0.5fr;
+    grid-template-rows: 0.5fr 5.2fr 0.5fr;
 }
 
 header{
@@ -15,7 +15,7 @@ header{
     gap: 10px;
     background-color: rgb(176, 9, 9);
     box-shadow: 5px 2px 8px red, 10px 2px 8px orange, 15px 2px 8px yellow;
-    max-height: 100px;
+    max-height: 110px;
 }
 
 header button{
@@ -23,7 +23,7 @@ header button{
     border-width: 0px;
     cursor: pointer;
     color: white;
-    
+    font-size: 2vw;
 }
 
 header img{
@@ -31,7 +31,8 @@ header img{
     margin-left: 10px;
 }
 
-main{
+/* for main home page */
+/* main{
     background-image: linear-gradient(90deg,rgb(176, 9, 9),rgb(252, 209, 38));
     text-align: center;
     color: white;
@@ -48,7 +49,51 @@ main p{
     margin: 3vw;
     margin-left: 20vw;
     margin-right: 20vw;
+} */
+
+/* for menu page */
+.menu-main{
+    background-image: url(./images/menu-background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
 }
+
+
+#inner-container{
+    border-radius: 10px;
+    margin: 3vw;
+    position: relative;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    background-image: linear-gradient(90deg,rgba(176, 9, 9, 0.566),rgba(252, 209, 38, 0.489));
+}
+
+#inner-container h1{
+    text-align: center;
+    font-size: 5vw;
+}
+
+#inner-container img{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.food-item> div{
+    margin: 1vh;
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 0.6fr 2fr;
+}
+
+.variety {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr 0.3fr;
+    gap: 10px;
+}
+
+/* for contact page */
 
 footer img{
     height: 5vw;
@@ -66,3 +111,4 @@ footer{
     color: white;
     box-shadow: 5px -2px 8px black, 10px -2px 8px grey, 15px -2px 8px black;
 }
+
