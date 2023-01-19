@@ -29,7 +29,7 @@ function initialPageStart(){
     contactButton.textContent = 'Contact'
 
     githubLogo.src = Github;
-    aLink.href = '';
+    aLink.href = 'https://github.com/Rohan-1-3/Restaurant-Page';
     footerCredit.textContent = 'Created By: rohan-1-3';
     // appending
     document.body.appendChild(content);
