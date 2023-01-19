@@ -5,7 +5,7 @@ import './style.css'
 import Logo from './images/logo.png'
 import Github from './images/github.png'
 
-function sth(){
+function initialPageStart(){
     const content = document.createElement('div');
 
     const header = document.createElement('header');
@@ -46,8 +46,8 @@ function sth(){
     footerSpan.appendChild(footerCredit);
     getHomePage();
     homeButton.addEventListener('click', getHomePage);
-    contactButton.addEventListener('click', getContactPage)
+    menuButton.addEventListener('click', getMenuPage);
+    contactButton.addEventListener('click', getContactPage);
 }
 
-
-sth();
+initialPageStart();
