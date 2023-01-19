@@ -1,4 +1,9 @@
 import KattiRoll from './images/kattiRoll.jpg';
+import Momo from './images/momo.jpeg';
+import Chowmein from './images/chowmein.jpg';
+import Pizza from './images/pizza.jpg';
+import SoftDrinks from './images/softdrinks.jpg';
+import HardDrinks from './images/harddrinks.jpg'
 
 export default function getMenuPage(){
     const content = document.querySelector('#content');
@@ -18,117 +23,71 @@ export default function getMenuPage(){
             const foodItem = document.createElement('div');
             foodItem.classList.add('food-item');
 
-                const foodOne = document.createElement('div');
-                foodOne.classList.add('food-one');
-
-                    const imageOne = document.createElement('div');
-                        const kattiRollImage = new Image();
-                        kattiRollImage.src = KattiRoll;
-
-                    const foodListOne = document.createElement('div');
-                        const kattiRollName = document.createElement('h2');
-                        kattiRollName.textContent = 'Katti Roll'
-                        const kattiRollVariety = document.createElement('div');
-                        kattiRollVariety.classList.add('variety')
-                            const kattiRollVarietyDiv1 = document.createElement('div');
-                                const item1 = document.createElement('p');
-                                const item2 = document.createElement('p');
-                                const item3 = document.createElement('p');
-                                const item4 = document.createElement('p');
-                                const item5 = document.createElement('p');
-                            const kattiRollVarietyDiv2 = document.createElement('div');
-                                const rupees1 = document.createElement('p');
-                                rupees1.textContent = 'Rs.'
-                                const rupees2 = document.createElement('p');
-                                rupees2.textContent = 'Rs.'
-                                const rupees3 = document.createElement('p');
-                                rupees3.textContent = 'Rs.'
-                                const rupees4 = document.createElement('p');
-                                rupees4.textContent = 'Rs.'
-                                const rupees5 = document.createElement('p');
-                                rupees5.textContent = 'Rs.'
-                            const kattiRollVarietyDiv3 = document.createElement('div');
-                                const item6 = document.createElement('p');
-                                const item7 = document.createElement('p');
-                                const item8 = document.createElement('p');
-                                const item9 = document.createElement('p');
-                                const item0 = document.createElement('p');
-                            const kattiRollVarietyDiv4 = document.createElement('div');
-                                const rupees6 = document.createElement('p');
-                                rupees6.textContent = 'Rs.'
-                                const rupees7 = document.createElement('p');
-                                rupees7.textContent = 'Rs.'
-                                const rupees8 = document.createElement('p');
-                                rupees8.textContent = 'Rs.'
-                                const rupees9 = document.createElement('p');
-                                rupees9.textContent = 'Rs.'
-                                const rupees0 = document.createElement('p');
-                                rupees0.textContent = 'Rs.'
-
     // appends
     content.insertBefore(main, content.children[1]);
     main.appendChild(innerContainer);
         innerContainer.appendChild(title);
         innerContainer.appendChild(foodItem);
 
-            foodItem.appendChild(foodOne);
-                foodOne.appendChild(imageOne);
-                    imageOne.appendChild(kattiRollImage);
-                foodOne.appendChild(foodListOne);
-                    foodListOne.appendChild(kattiRollName)
-                    foodListOne.appendChild(kattiRollVariety);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv1);
-                            kattiRollVarietyDiv1.appendChild(item1);
-                            kattiRollVarietyDiv1.appendChild(item2);
-                            kattiRollVarietyDiv1.appendChild(item3);
-                            kattiRollVarietyDiv1.appendChild(item4);
-                            kattiRollVarietyDiv1.appendChild(item5);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv2);
-                            kattiRollVarietyDiv2.appendChild(rupees1);
-                            kattiRollVarietyDiv2.appendChild(rupees2);
-                            kattiRollVarietyDiv2.appendChild(rupees3);
-                            kattiRollVarietyDiv2.appendChild(rupees4);
-                            kattiRollVarietyDiv2.appendChild(rupees5);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv3);
-                            kattiRollVarietyDiv3.appendChild(item6);
-                            kattiRollVarietyDiv3.appendChild(item7);
-                            kattiRollVarietyDiv3.appendChild(item8);
-                            kattiRollVarietyDiv3.appendChild(item9);
-                            kattiRollVarietyDiv3.appendChild(item0);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv4);
-                            kattiRollVarietyDiv4.appendChild(rupees6);
-                            kattiRollVarietyDiv4.appendChild(rupees7);
-                            kattiRollVarietyDiv4.appendChild(rupees8);
-                            kattiRollVarietyDiv4.appendChild(rupees9);
-                            kattiRollVarietyDiv4.appendChild(rupees0);
-             foodItem.appendChild(foodOne);
-                foodOne.appendChild(imageOne);
-                    imageOne.appendChild(kattiRollImage);
-                foodOne.appendChild(foodListOne);
-                    foodListOne.appendChild(kattiRollName)
-                    foodListOne.appendChild(kattiRollVariety);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv1);
-                            kattiRollVarietyDiv1.appendChild(item1);
-                            kattiRollVarietyDiv1.appendChild(item2);
-                            kattiRollVarietyDiv1.appendChild(item3);
-                            kattiRollVarietyDiv1.appendChild(item4);
-                            kattiRollVarietyDiv1.appendChild(item5);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv2);
-                            kattiRollVarietyDiv2.appendChild(rupees1);
-                            kattiRollVarietyDiv2.appendChild(rupees2);
-                            kattiRollVarietyDiv2.appendChild(rupees3);
-                            kattiRollVarietyDiv2.appendChild(rupees4);
-                            kattiRollVarietyDiv2.appendChild(rupees5);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv3);
-                            kattiRollVarietyDiv3.appendChild(item6);
-                            kattiRollVarietyDiv3.appendChild(item7);
-                            kattiRollVarietyDiv3.appendChild(item8);
-                            kattiRollVarietyDiv3.appendChild(item9);
-                            kattiRollVarietyDiv3.appendChild(item0);
-                        kattiRollVariety.appendChild(kattiRollVarietyDiv4);
-                            kattiRollVarietyDiv4.appendChild(rupees6);
-                            kattiRollVarietyDiv4.appendChild(rupees7);
-                            kattiRollVarietyDiv4.appendChild(rupees8);
-                            kattiRollVarietyDiv4.appendChild(rupees9);
-                            kattiRollVarietyDiv4.appendChild(rupees0);
+        for(let i=0;i<6;i+=1){
+            const foodItems = document.createElement('div');
+            foodItem.appendChild(foodItems).className = `food- ${i}`;
+                const foodimages= document.createElement('div');
+                foodItems.appendChild(foodimages);
+
+                const foodImage = document.createElement('img');
+
+                const foodlist = document.createElement('div');
+                foodItems.appendChild(foodlist);
+                    const foodName = document.createElement('h2'); 
+                    const foodlist2 = document.createElement('div');
+                if(i===0){
+                    foodImage.src = KattiRoll;
+                    foodName.textContent = 'Katti Roll';
+                }
+                if(i===1){
+                    foodImage.src = Momo;
+                    foodName.textContent = 'Momo';
+                }
+                if(i===2){
+                    foodImage.src = Chowmein;
+                    foodName.textContent = 'Chowmein';
+                }
+                if(i===3){
+                    foodImage.src = Pizza;
+                    foodName.textContent = 'Pizza';
+                }
+                if(i===4){
+                    foodImage.src = SoftDrinks;
+                    foodName.textContent = 'Soft Drinks';
+                }
+                if(i===5){
+                    foodImage.src = HardDrinks;
+                    foodName.textContent = 'Hard Drinks';
+                }
+                foodimages.appendChild(foodImage);
+                foodlist.appendChild(foodName);
+                foodlist.appendChild(foodlist2).className = 'variety';
+                for(let j=0;j<4;j+=1){
+                    const foodlist3 = document.createElement('div');
+                    
+                    foodlist2.appendChild(foodlist3);
+                    if(j===1 || j===3){
+                        foodlist3.classList.add('rupee');
+                        for(let k=0;k<5;k+=1){
+                            const rupee = document.createElement('p');
+                            const randomPrice = Math.floor((Math.random()*280)+120);
+                            rupee.textContent = `Rs. ${randomPrice}`;
+                            foodlist3.appendChild(rupee);
+                        }
+                    }
+                    if(j===0 || j===2){
+                        for(let m=0;m<5;m+=1){
+                            const randomFoodname = document.createElement('p');
+                            randomFoodname.textContent = 'Some Random Dish';
+                            foodlist3.appendChild(randomFoodname);
+                        }
+                    }
+                }
+        }
 }
