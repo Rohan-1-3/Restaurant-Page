@@ -33,7 +33,9 @@ header img{
 
 /* for main home page */
 .main{
-    background-image: linear-gradient(90deg,rgb(176, 9, 9),rgb(252, 209, 38));
+    background-image: url(./images/menu-background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     text-align: center;
     color: white;
     font-weight: bolder;

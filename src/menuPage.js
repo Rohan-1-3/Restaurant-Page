@@ -1,4 +1,5 @@
-import KattiRoll from './images/kattiRoll.jpg'
+import KattiRoll from './images/kattiRoll.jpg';
+
 export default function getMenuPage(){
     const content = document.querySelector('#content');
     if(content.children.length === 3){
