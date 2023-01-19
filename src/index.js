@@ -48,6 +48,7 @@ function initialPageStart(){
     homeButton.addEventListener('click', getHomePage);
     menuButton.addEventListener('click', getMenuPage);
     contactButton.addEventListener('click', getContactPage);
+    headerLogo.addEventListener('click', getHomePage)
 }
 
 initialPageStart();

@@ -26,6 +26,10 @@ header button{
     font-size: 2vw;
 }
 
+header button:hover{
+    opacity: 0.5;
+}
+
 header img{
     height: 7vw;
     margin-left: 10px;
