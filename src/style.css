@@ -137,7 +137,15 @@ header img{
     width: 2vw;
     border-radius: 50%;
     position: relative;
-    top: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.contacts h2{
+    padding-top: 1vw ;
+}
+
+.contacts h3{
+    display: flex;
 }
 
 .form input, .form button{
