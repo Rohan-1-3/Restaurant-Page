@@ -32,7 +32,7 @@ header img{
 }
 
 /* for main home page */
-/* main{
+.main{
     background-image: linear-gradient(90deg,rgb(176, 9, 9),rgb(252, 209, 38));
     text-align: center;
     color: white;
@@ -40,16 +40,16 @@ header img{
     padding-top: 1vw;
 }
 
-main h1{
+.main h1{
     font-size: 5vw;
 }
 
-main p{
+.main p{
     font-size: 2vw;
     margin: 3vw;
     margin-left: 20vw;
     margin-right: 20vw;
-} */
+}
 
 /* for menu page */
 .menu-main{
@@ -94,6 +94,73 @@ main p{
 }
 
 /* for contact page */
+.contact-background{
+    background-image: url(./images/contact-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw;
+    border-radius: 10px;
+    margin: 3vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    color: white;
+    font-weight: bolder;
+}
+
+.form label, .form button{
+    display: block;
+
+}
+
+.contacts, .form{
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.contacts{
+    background-image: linear-gradient(90deg,rgb(252, 209, 38),rgba(176, 9, 9, 0.484));
+}
+
+.form{
+    background-image: linear-gradient(90deg,rgba(176, 9, 9, 0.566),rgb(252, 209, 38));
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts img{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    position: relative;
+    top: 0.5vw;
+}
+
+.form input, .form button{
+    border-width: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 2vw;
+    padding-left: 1vw;
+}
+
+.form textarea{
+    padding-left: 1vw;
+    border-radius: 10px;
+}
+
+.form button{
+    background-color: green;
+    cursor: pointer;
+}
+
+.form input:focus, .form textarea:focus{
+    outline: none;
+}
 
 footer img{
     height: 5vw;
