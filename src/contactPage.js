@@ -4,10 +4,10 @@ import SantoshPic from './images/rantosh.jpg'
 
 export default function getContactPage(){
     const content = document.querySelector('#content');
-    if(content.children.length === 3){
+    if(content.children.length === 3){ // if main div exists removes the main div
         content.removeChild(content.children[1]);
     }
-
+    
     const main = document.createElement('main');
     main.classList.add('contact-background')
     const contactContainer = document.createElement('div');

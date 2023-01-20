@@ -1,3 +1,4 @@
+// pictures importing
 import KattiRoll from './images/kattiRoll.jpg';
 import Momo from './images/momo.jpeg';
 import Chowmein from './images/chowmein.jpg';
@@ -7,12 +8,12 @@ import HardDrinks from './images/harddrinks.jpg'
 
 export default function getMenuPage(){
     const content = document.querySelector('#content');
-    if(content.children.length === 3){
+    if(content.children.length === 3){ // if main div exists removes the main div
         content.removeChild(content.children[1]);
     }
 
     const main = document.createElement('main');
-    main.classList.add('menu-main');
+    main.classList.add('menu-main'); // class for CSS effect
 
         const innerContainer = document.createElement('div');
         innerContainer.id = 'inner-container';
@@ -23,25 +24,25 @@ export default function getMenuPage(){
             const foodItem = document.createElement('div');
             foodItem.classList.add('food-item');
 
-    // appends
     content.insertBefore(main, content.children[1]);
     main.appendChild(innerContainer);
         innerContainer.appendChild(title);
         innerContainer.appendChild(foodItem);
 
-        for(let i=0;i<6;i+=1){
+        for(let i=0;i<6;i+=1){// creating divs for food items 
             const foodItems = document.createElement('div');
             foodItem.appendChild(foodItems).className = `food- ${i}`;
+                // food image div inside food item 
                 const foodimages= document.createElement('div');
                 foodItems.appendChild(foodimages);
-
+                
                 const foodImage = document.createElement('img');
 
                 const foodlist = document.createElement('div');
                 foodItems.appendChild(foodlist);
                     const foodName = document.createElement('h2'); 
                     const foodlist2 = document.createElement('div');
-                if(i===0){
+                if(i===0){ // different images for each item and name
                     foodImage.src = KattiRoll;
                     foodName.textContent = 'Katti Roll';
                 }
@@ -65,14 +66,16 @@ export default function getMenuPage(){
                     foodImage.src = HardDrinks;
                     foodName.textContent = 'Hard Drinks';
                 }
+                // appending image and name
                 foodimages.appendChild(foodImage);
                 foodlist.appendChild(foodName);
                 foodlist.appendChild(foodlist2).className = 'variety';
+                // Name and rupees div creation and appending
                 for(let j=0;j<4;j+=1){
                     const foodlist3 = document.createElement('div');
                     
                     foodlist2.appendChild(foodlist3);
-                    if(j===1 || j===3){
+                    if(j===1 || j===3){ // different rupees for diff items on menu
                         foodlist3.classList.add('rupee');
                         for(let k=0;k<5;k+=1){
                             const rupee = document.createElement('p');
@@ -81,7 +84,7 @@ export default function getMenuPage(){
                             foodlist3.appendChild(rupee);
                         }
                     }
-                    if(j===0 || j===2){
+                    if(j===0 || j===2){ // name for each dish
                         for(let m=0;m<5;m+=1){
                             const randomFoodname = document.createElement('p');
                             randomFoodname.textContent = 'Some Random Dish';
